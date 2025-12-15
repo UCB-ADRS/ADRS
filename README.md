@@ -24,7 +24,6 @@ This repository showcases AI-driven research examples across multiple frameworks
   - [MoE expert placement](openevolve/examples/ADRS/eplb)
   - [Global model scheduling (PRISM)](openevolve/examples/ADRS/prism)
   - [Transaction scheduling](openevolve/examples/ADRS/txn_scheduling)
-  - [Telemetry repair](openevolve/examples/ADRS/telemetry_repair)
   - [LLM-SQL optimization](openevolve/examples/ADRS/llm_sql)
   - [Spot instance scheduling for single region](openevolve/examples/ADRS/cant-be-late)
   - [Spot instance scheduling for multi-region](openevolve/examples/ADRS/cant-be-late-multi)
