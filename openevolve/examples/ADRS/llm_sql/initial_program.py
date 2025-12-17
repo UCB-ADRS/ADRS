@@ -2,7 +2,7 @@ import pandas as pd
 from solver import Algorithm
 from typing import Tuple, List
 from typing import List, Dict
-from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from functools import lru_cache
 from collections import Counter
 import networkx as nx
@@ -240,7 +240,7 @@ class Evolved(Algorithm):
         df_top_half = df.iloc[:mid_index]
         df_bottom_half = df.iloc[mid_index:]
 
-        with ProcessPoolExecutor() as executor:
+        with ThreadPoolExecutor() as executor:
             future_top = executor.submit(self.recursive_split_and_reorder, df_top_half, original_columns, early_stop)
             future_bottom = executor.submit(self.recursive_split_and_reorder, df_bottom_half, original_columns, early_stop)
 

@@ -1,9 +1,6 @@
 from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
 from typing import List, Tuple
-from pyspark.sql import SparkSession
-from itertools import combinations
-import yaml
 
 class TrieNode:
     def __init__(self):
